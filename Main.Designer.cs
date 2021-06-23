@@ -29,6 +29,7 @@ namespace Temperature
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.celsiusField = new System.Windows.Forms.TextBox();
             this.convertButton = new System.Windows.Forms.Button();
             this.fahrenheitField = new System.Windows.Forms.TextBox();
@@ -40,82 +41,56 @@ namespace Temperature
             // 
             // celsiusField
             // 
-            this.celsiusField.Location = new System.Drawing.Point(116, 12);
+            resources.ApplyResources(this.celsiusField, "celsiusField");
             this.celsiusField.Name = "celsiusField";
-            this.celsiusField.PlaceholderText = "Celsius";
-            this.celsiusField.Size = new System.Drawing.Size(113, 27);
-            this.celsiusField.TabIndex = 0;
             this.celsiusField.TextChanged += new System.EventHandler(this.celsiusField_TextChanged);
             // 
             // convertButton
             // 
-            this.convertButton.Location = new System.Drawing.Point(235, 12);
+            resources.ApplyResources(this.convertButton, "convertButton");
             this.convertButton.Name = "convertButton";
-            this.convertButton.Size = new System.Drawing.Size(94, 95);
-            this.convertButton.TabIndex = 1;
-            this.convertButton.Text = "Convert";
             this.convertButton.UseVisualStyleBackColor = true;
             this.convertButton.Click += new System.EventHandler(this.ConvertButtonClick);
             // 
             // fahrenheitField
             // 
-            this.fahrenheitField.Location = new System.Drawing.Point(116, 45);
+            resources.ApplyResources(this.fahrenheitField, "fahrenheitField");
             this.fahrenheitField.Name = "fahrenheitField";
-            this.fahrenheitField.PlaceholderText = "Fahrenheit";
-            this.fahrenheitField.Size = new System.Drawing.Size(113, 27);
-            this.fahrenheitField.TabIndex = 2;
             this.fahrenheitField.TextChanged += new System.EventHandler(this.fahrenheitField_TextChanged);
             // 
             // kelvinField
             // 
-            this.kelvinField.Location = new System.Drawing.Point(116, 78);
+            resources.ApplyResources(this.kelvinField, "kelvinField");
             this.kelvinField.Name = "kelvinField";
-            this.kelvinField.PlaceholderText = "Kelvin";
-            this.kelvinField.Size = new System.Drawing.Size(113, 27);
-            this.kelvinField.TabIndex = 3;
             this.kelvinField.TextChanged += new System.EventHandler(this.kelvinField_TextChanged);
             // 
             // сelsiusRButton
             // 
-            this.сelsiusRButton.AutoSize = true;
-            this.сelsiusRButton.Location = new System.Drawing.Point(13, 10);
+            resources.ApplyResources(this.сelsiusRButton, "сelsiusRButton");
+            this.сelsiusRButton.Checked = true;
             this.сelsiusRButton.Name = "сelsiusRButton";
-            this.сelsiusRButton.Size = new System.Drawing.Size(73, 24);
-            this.сelsiusRButton.TabIndex = 4;
             this.сelsiusRButton.TabStop = true;
-            this.сelsiusRButton.Text = "сelsius";
             this.сelsiusRButton.UseVisualStyleBackColor = true;
             this.сelsiusRButton.CheckedChanged += new System.EventHandler(this.сelsiusRButton_CheckedChanged);
             // 
             // fahrenheitRButton
             // 
-            this.fahrenheitRButton.AutoSize = true;
-            this.fahrenheitRButton.Location = new System.Drawing.Point(13, 41);
+            resources.ApplyResources(this.fahrenheitRButton, "fahrenheitRButton");
             this.fahrenheitRButton.Name = "fahrenheitRButton";
-            this.fahrenheitRButton.Size = new System.Drawing.Size(97, 24);
-            this.fahrenheitRButton.TabIndex = 5;
-            this.fahrenheitRButton.TabStop = true;
-            this.fahrenheitRButton.Text = "fahrenheit";
             this.fahrenheitRButton.UseVisualStyleBackColor = true;
             this.fahrenheitRButton.CheckedChanged += new System.EventHandler(this.fahrenheitRButton_CheckedChanged);
             // 
             // kelvinRButton
             // 
-            this.kelvinRButton.AutoSize = true;
-            this.kelvinRButton.Location = new System.Drawing.Point(13, 72);
+            resources.ApplyResources(this.kelvinRButton, "kelvinRButton");
             this.kelvinRButton.Name = "kelvinRButton";
-            this.kelvinRButton.Size = new System.Drawing.Size(68, 24);
-            this.kelvinRButton.TabIndex = 6;
-            this.kelvinRButton.TabStop = true;
-            this.kelvinRButton.Text = "kelvin";
             this.kelvinRButton.UseVisualStyleBackColor = true;
             this.kelvinRButton.CheckedChanged += new System.EventHandler(this.kelvinRButton_CheckedChanged);
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 113);
             this.Controls.Add(this.kelvinRButton);
             this.Controls.Add(this.fahrenheitRButton);
             this.Controls.Add(this.сelsiusRButton);
@@ -124,8 +99,9 @@ namespace Temperature
             this.Controls.Add(this.convertButton);
             this.Controls.Add(this.celsiusField);
             this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Main";
-            this.Text = "Temperature";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Main_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();

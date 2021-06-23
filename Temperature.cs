@@ -18,32 +18,38 @@ namespace Temperature
 
         public double CelsiuisToFahrenheit()
         {
-            return celsius * 1.8 + 32;
+            var result = celsius * 1.8 + 32;
+            return Math.Round(result, 5);
         }
 
         public double CelsiuisToKelvin()
         {
-            return celsius + 273.15;
+            var result = celsius + 273.15;
+            return Math.Round(result, 5);
         }
 
         public double FahrenheitToCelsiuis()
         {
-            return (fahrenheit - 32) / 1.8;
+            var result = (fahrenheit - 32) / 1.8;
+            return Math.Round(result, 5);
         }
 
         public double FahrenheitToKelvin()
         {
-            return (fahrenheit + 459.67) / 1.8;
+            var result = (fahrenheit + 459.67) / 1.8;
+            return Math.Round(result, 5);
         }
 
         public double KelvinToCelsiuis()
         {
-            return kelvin - 273.15;
+            var result = kelvin - 273.15;
+            return Math.Round(result, 5);
         }
 
         public double KelvinToFahrenheit()
         {
-            return kelvin * 1.8 - 459.67;
+            var result = kelvin * 1.8 - 459.67;
+            return Math.Round(result, 5);
         }
     }
 }

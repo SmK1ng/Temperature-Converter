@@ -57,4 +57,204 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="kelvinRButton.Text" xml:space="preserve">
+    <value>kelvin</value>
+  </data>
+  <data name="&gt;&gt;fahrenheitField.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;fahrenheitRButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="fahrenheitRButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 41</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="fahrenheitRButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;celsiusField.Name" xml:space="preserve">
+    <value>celsiusField</value>
+  </data>
+  <data name="convertButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 12</value>
+  </data>
+  <data name="fahrenheitRButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 24</value>
+  </data>
+  <data name="fahrenheitField.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 45</value>
+  </data>
+  <data name="fahrenheitField.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 27</value>
+  </data>
+  <data name="convertButton.Text" xml:space="preserve">
+    <value>Convert</value>
+  </data>
+  <data name="kelvinRButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;celsiusField.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fahrenheitField.PlaceholderText" xml:space="preserve">
+    <value>Fahrenheit</value>
+  </data>
+  <data name="&gt;&gt;celsiusField.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;kelvinField.Name" xml:space="preserve">
+    <value>kelvinField</value>
+  </data>
+  <data name="&gt;&gt;kelvinRButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="сelsiusRButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;kelvinField.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="сelsiusRButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;kelvinRButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="kelvinField.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="сelsiusRButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 10</value>
+  </data>
+  <data name="&gt;&gt;fahrenheitRButton.Name" xml:space="preserve">
+    <value>fahrenheitRButton</value>
+  </data>
+  <data name="kelvinField.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 27</value>
+  </data>
+  <data name="celsiusField.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 12</value>
+  </data>
+  <data name="fahrenheitRButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;сelsiusRButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;kelvinField.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="kelvinField.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 78</value>
+  </data>
+  <data name="&gt;&gt;kelvinRButton.Name" xml:space="preserve">
+    <value>kelvinRButton</value>
+  </data>
+  <data name="&gt;&gt;kelvinField.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;сelsiusRButton.Name" xml:space="preserve">
+    <value>сelsiusRButton</value>
+  </data>
+  <data name="kelvinRButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 72</value>
+  </data>
+  <data name="&gt;&gt;сelsiusRButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fahrenheitField.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;convertButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;convertButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;convertButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fahrenheitRButton.Text" xml:space="preserve">
+    <value>fahrenheit</value>
+  </data>
+  <data name="kelvinRButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 24</value>
+  </data>
+  <data name="celsiusField.PlaceholderText" xml:space="preserve">
+    <value>Celsius</value>
+  </data>
+  <data name="celsiusField.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 27</value>
+  </data>
+  <data name="kelvinRButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="convertButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 95</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Temperature</value>
+  </data>
+  <data name="&gt;&gt;fahrenheitField.Name" xml:space="preserve">
+    <value>fahrenheitField</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="&gt;&gt;fahrenheitRButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;сelsiusRButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;convertButton.Name" xml:space="preserve">
+    <value>convertButton</value>
+  </data>
+  <data name="&gt;&gt;fahrenheitRButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>332, 113</value>
+  </data>
+  <data name="celsiusField.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="сelsiusRButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 24</value>
+  </data>
+  <data name="convertButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;kelvinRButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="сelsiusRButton.Text" xml:space="preserve">
+    <value>сelsius</value>
+  </data>
+  <data name="fahrenheitField.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;celsiusField.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fahrenheitField.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kelvinField.PlaceholderText" xml:space="preserve">
+    <value>Kelvin</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>en-US</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

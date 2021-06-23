@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,10 +16,18 @@ namespace Temperature
 
         Temperature temperature = new Temperature();
         string flag;
+        double dbl;
+        bool success;
 
         public Main()
         {
             InitializeComponent();
+
+            celsiusField.Text = 0.ToString();
+            fahrenheitField.Text = 0.ToString();
+            kelvinField.Text = 0.ToString();
+
+            flag = "сelsius";
         }
 
         private void ConvertButtonClick(object sender, EventArgs e)
@@ -31,24 +40,45 @@ namespace Temperature
                 return;
             }
 
-            if (flag == "сelsius")
+            if (
+                Double.TryParse(celsiusField.Text, out dbl) &&
+                Double.TryParse(fahrenheitField.Text, out dbl) &&
+                Double.TryParse(kelvinField.Text, out dbl)
+                )
             {
-                fahrenheitField.Text = temperature.CelsiuisToFahrenheit().ToString();
-                kelvinField.Text = temperature.CelsiuisToKelvin().ToString();
-            }
-            
-            if (flag == "fahrenheit")
-            {
-                celsiusField.Text = temperature.FahrenheitToCelsiuis().ToString();
-                kelvinField.Text = temperature.FahrenheitToKelvin().ToString();
-            }
+                if (flag == "сelsius")
+                {
+                    fahrenheitField.Text = temperature.CelsiuisToFahrenheit().ToString();
+                    kelvinField.Text = temperature.CelsiuisToKelvin().ToString();
+                }
 
-            if (flag == "kelvin")
-            {
-                celsiusField.Text = temperature.KelvinToCelsiuis().ToString();
-                fahrenheitField.Text = temperature.KelvinToFahrenheit().ToString();
-            }
+                if (flag == "fahrenheit")
+                {
+                    celsiusField.Text = temperature.FahrenheitToCelsiuis().ToString();
+                    kelvinField.Text = temperature.FahrenheitToKelvin().ToString();
+                }
 
+                if (flag == "kelvin")
+                {
+                    celsiusField.Text = temperature.KelvinToCelsiuis().ToString();
+                    fahrenheitField.Text = temperature.KelvinToFahrenheit().ToString();
+                }
+
+                Loger.Log(celsiusField.Text, fahrenheitField.Text, kelvinField.Text);
+            }
+            else
+            {
+                if (Double.TryParse(celsiusField.Text, out dbl) == false)
+                    celsiusField.Text = 0.ToString();
+
+                if (Double.TryParse(fahrenheitField.Text, out dbl) == false)
+                    fahrenheitField.Text = 0.ToString();
+
+                if(Double.TryParse(kelvinField.Text, out dbl) == false)
+                    kelvinField.Text = 0.ToString();
+
+                MessageBox.Show("Invalid input format");
+            }
         }
 
         private void сelsiusRButton_CheckedChanged(object sender, EventArgs e)
@@ -56,13 +86,17 @@ namespace Temperature
             RadioButton rb = sender as RadioButton;
             if (rb.Checked)
             {
-                celsiusField.Text = 0.ToString();
                 celsiusField.Focus();
-
-                fahrenheitField.Text = 0.ToString();
-                kelvinField.Text = 0.ToString();
-                temperature.CelsiusProp = Convert.ToDouble(celsiusField.Text);
-                flag = "сelsius";
+                success = Double.TryParse(celsiusField.Text, out dbl);
+                if (success)
+                {
+                    temperature.CelsiusProp = dbl;
+                    flag = "сelsius";
+                }
+                else
+                {
+                    MessageBox.Show("Invalid input format");
+                }
             }
         }
 
@@ -71,13 +105,17 @@ namespace Temperature
             RadioButton rb = sender as RadioButton;
             if (rb.Checked)
             {
-                fahrenheitField.Text = 0.ToString();
                 fahrenheitField.Focus();
-
-                celsiusField.Text = 0.ToString();
-                kelvinField.Text = 0.ToString();
-                temperature.FahrenheitProp = Convert.ToDouble(fahrenheitField.Text);
-                flag = "fahrenheit";
+                success = Double.TryParse(fahrenheitField.Text, out dbl);
+                if (success)
+                {
+                    temperature.FahrenheitProp = dbl;
+                    flag = "fahrenheit";
+                }
+                else
+                {
+                    MessageBox.Show("Invalid input format");
+                }
             }
         }
 
@@ -86,30 +124,36 @@ namespace Temperature
             RadioButton rb = sender as RadioButton;
             if (rb.Checked)
             {
-                kelvinField.Text = 0.ToString();
                 kelvinField.Focus();
-
-                celsiusField.Text = 0.ToString();
-                fahrenheitField.Text = 0.ToString();
-                temperature.KelvinProp = Convert.ToDouble(kelvinField.Text);
-                flag = "kelvin";
+                success = Double.TryParse(kelvinField.Text, out dbl);
+                if (success)
+                {
+                    temperature.KelvinProp = dbl;
+                    flag = "kelvin";
+                }
+                else
+                {
+                    MessageBox.Show("Invalid input format");
+                }
             }
         }
 
         private void celsiusField_TextChanged(object sender, EventArgs e)
         {
-            
-            temperature.CelsiusProp = Convert.ToDouble(celsiusField.Text);
+            Double.TryParse(celsiusField.Text, out dbl);
+            temperature.CelsiusProp = dbl;
         }
 
         private void fahrenheitField_TextChanged(object sender, EventArgs e)
         {
-            temperature.FahrenheitProp = Convert.ToDouble(fahrenheitField.Text);
+            Double.TryParse(fahrenheitField.Text, out dbl);
+            temperature.FahrenheitProp = dbl;
         }
 
         private void kelvinField_TextChanged(object sender, EventArgs e)
         {
-            temperature.KelvinProp = Convert.ToDouble(kelvinField.Text);
+            Double.TryParse(kelvinField.Text, out dbl);
+            temperature.KelvinProp = dbl;
         }
 
         private void Main_KeyDown(object sender, KeyEventArgs e)
