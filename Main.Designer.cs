@@ -37,6 +37,7 @@ namespace Temperature
             this.сelsiusRButton = new System.Windows.Forms.RadioButton();
             this.fahrenheitRButton = new System.Windows.Forms.RadioButton();
             this.kelvinRButton = new System.Windows.Forms.RadioButton();
+            this.logsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // celsiusField
@@ -87,10 +88,18 @@ namespace Temperature
             this.kelvinRButton.UseVisualStyleBackColor = true;
             this.kelvinRButton.CheckedChanged += new System.EventHandler(this.kelvinRButton_CheckedChanged);
             // 
+            // logsButton
+            // 
+            resources.ApplyResources(this.logsButton, "logsButton");
+            this.logsButton.Name = "logsButton";
+            this.logsButton.UseVisualStyleBackColor = true;
+            this.logsButton.Click += new System.EventHandler(this.logsButton_Click);
+            // 
             // Main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.logsButton);
             this.Controls.Add(this.kelvinRButton);
             this.Controls.Add(this.fahrenheitRButton);
             this.Controls.Add(this.сelsiusRButton);
@@ -117,6 +126,7 @@ namespace Temperature
         private System.Windows.Forms.RadioButton сelsiusRButton;
         private System.Windows.Forms.RadioButton fahrenheitRButton;
         private System.Windows.Forms.RadioButton kelvinRButton;
+        private System.Windows.Forms.Button logsButton;
     }
 }
 

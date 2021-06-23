@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,11 +41,9 @@ namespace Temperature
                 return;
             }
 
-            if (
-                Double.TryParse(celsiusField.Text, out dbl) &&
+            if (Double.TryParse(celsiusField.Text, out dbl) &&
                 Double.TryParse(fahrenheitField.Text, out dbl) &&
-                Double.TryParse(kelvinField.Text, out dbl)
-                )
+                Double.TryParse(kelvinField.Text, out dbl))
             {
                 if (flag == "сelsius")
                 {
@@ -65,6 +64,7 @@ namespace Temperature
                 }
 
                 Loger.Log(celsiusField.Text, fahrenheitField.Text, kelvinField.Text);
+                
             }
             else
             {
@@ -161,6 +161,16 @@ namespace Temperature
             if (e.KeyCode == Keys.Enter)
             {
                 ConvertButtonClick(sender, e);
+            }
+        }
+
+        private void logsButton_Click(object sender, EventArgs e)
+        {
+            Log log = new Log();
+            
+            if (log.ReadingFromFile())
+            {
+                log.Show();
             }
         }
     }
